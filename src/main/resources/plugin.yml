@@ -1,0 +1,18 @@
+name: ${project.name}
+version: ${project.version}
+main: com.github.kenkeso.zlists.ZListsPlugin
+api-version: '1.21'
+description: ${project.description}
+author: kenkeso
+website: ${project.url}
+
+commands:
+  z:
+    description: 自分のX座標を表示します。
+    usage: /z
+    permission: zlists.command.z
+
+permissions:
+  zlists.command.z:
+    description: /z コマンドの使用を許可します。
+    default: true
